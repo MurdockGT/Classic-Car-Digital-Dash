@@ -14,7 +14,7 @@ Intake Air Temp
 	Sensor is Non Linear, programmed multiple calibration points to correct the readings.
 
 	
-	Future Additions
+Future Additions
 
 Oil Pressure 
 	VDO type Oil pressure sender,100 psi,240-33 ohms,low 11 psi alarm/warning switch
@@ -26,5 +26,5 @@ Fuel Level indicator
 
 Battery Level
 	Will use a voltage divider and calibration. R1 will be 1m ohm and R2 will be 100k ohms. We will sence from the center
-	of R1 and R2.  R2 will be grounded. Ri will go to positive on the battery.
+	of R1 and R2.  R2 will be grounded. R1 will go to positive on the battery.
 	
