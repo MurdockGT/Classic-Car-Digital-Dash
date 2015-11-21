@@ -19,7 +19,6 @@ void loop() {
   // tempIAT();  // Calls on IAT sensor in Manifold
   fanControl(temprF);
 
-  
   //  Serial.println(temprF);
 }
 
