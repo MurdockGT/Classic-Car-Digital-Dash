@@ -22,7 +22,7 @@
     <ProjectGuid>{C651E978-94D9-4DA2-B9BF-556837234219}</ProjectGuid>
     <RootNamespace>TestTemp</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>302Monitor</ProjectName>
+    <ProjectName>CarMonitor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -75,10 +75,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Users\shane\OneDrive\Documents\GitHubVisualStudio\Classic-Car-Digital-Dash;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\qndn3zqe.e0g\Micro Platforms\default\debuggers;C:\Users\shane\OneDrive\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Users\shane\OneDrive\Documents\GitHubVisualStudio\Classic-Car-Digital-Dash;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\qndn3zqe.e0g\Micro Platforms\default\debuggers;C:\Users\shane\OneDrive\Documents\Arduino\libraries;C:\Users\shane\OneDrive\Documents\GitHubVisualStudio\Classic-Car-Digital-Dash;C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\qndn3zqe.e0g\Micro Platforms\default\debuggers;C:\Users\shane\OneDrive\Documents\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\Wire\utility;C:\Program Files (x86)\Arduino\hardware\tools\avr/avr/include/;C:\Program Files (x86)\Arduino\hardware\tools\avr//avr/include/avr/;C:\Program Files (x86)\Arduino\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>C:\Users\shane\OneDrive\Documents\GitHubVisualStudio\Classic-Car-Digital-Dash\__vm\.Classic-Car-Digital-Dash.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>__AVR_ATmega2560__;_VMDEBUG=1;F_CPU=16000000L;ARDUINO=166;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=166;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -123,7 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="302Monitor.ino" />
+    <None Include="CarMonitor.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.302Monitor.vsarduino.h" />

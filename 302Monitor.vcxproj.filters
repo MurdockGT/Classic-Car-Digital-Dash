@@ -15,14 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="302Monitor.ino" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="__vm\.302Monitor.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="__vm\.Classic-Car-Digital-Dash.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CarMonitor.ino" />
   </ItemGroup>
 </Project>
