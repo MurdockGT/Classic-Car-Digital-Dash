@@ -256,7 +256,7 @@ int getIATtemp()
 float getIntakePress()
 {
 	// will need to test with this sensor and moddify from there.
-	// http://www.diyautotune.com/catalog/map-gm-bar-map-sensor-p-161.html
+	// http://www.14point7.com/products/boost-vac-sensor
 	// take 10 readings and sum them
 	int val = 0;
 	for (int i = 1; i <= 10; i++)
