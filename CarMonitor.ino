@@ -22,8 +22,8 @@ const float aRef = 5.0; // analog reference for board (Volts)
 const float regVoltage = 5.0; // instrument unit voltage regulator output (Volts)
 const float fuelGaugeOhms = 13.0; // resistance of fuel level gauge (ohms)
 								  //digital Pins
-const byte tachPin = 3; // tach signal on digital pin 3 (interrupt 1)
-const byte oilWarninglight = ; // pin for showing if oil pressure has dropped below 11 psi
+const byte tachPin = 19; // tach signal on digital pin 3 (interrupt 1)
+const byte oilWarninglight = 18; // pin for showing if oil pressure has dropped below 11 psi
 const byte wireSDAPin = 20; // I2C SDA
 const byte wireSCLPin = 21; // I2C SCL
 
@@ -46,8 +46,8 @@ int refreshInterval = 750; // milliseconds between sensor updates
 
 						   //configuration for the Tachometer variables 
 byte engineCycles = 4; // for tach calculation :Future use
-const int tachSensorPin = 21;
-const int sensorInterrupt = 2;
+const int tachSensorPin = 19;
+const int sensorInterrupt = 4;
 const int timeoutValue = 5;
 volatile unsigned long lastPulseTime;
 volatile unsigned long interval = 0;
