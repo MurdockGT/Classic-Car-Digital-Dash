@@ -23,6 +23,7 @@ const float regVoltage = 5.0; // instrument unit voltage regulator output (Volts
 const float fuelGaugeOhms = 13.0; // resistance of fuel level gauge (ohms)
 								  //digital Pins
 const byte tachPin = 3; // tach signal on digital pin 3 (interrupt 1)
+const byte oilWarninglight = ; // pin for showing if oil pressure has dropped below 11 psi
 const byte wireSDAPin = 20; // I2C SDA
 const byte wireSCLPin = 21; // I2C SCL
 
