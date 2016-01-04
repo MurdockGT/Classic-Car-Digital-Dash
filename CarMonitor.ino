@@ -55,14 +55,19 @@ volatile int timeoutCounter;
 int rpm;
 int rpmlast = 3000;
 int rpm_interval = 3000;
-const int fanOut = 2;
+const int fanOut1 = 4;
+const int fanOut2 = 5;
+const int eChoke = 22;  // Pin assignment for Choke engagment if you have an electronic choke.
+
 
 void setup() {
 	// Start i2c master
 	Wire.begin();
 	Serial.begin(9600); // initialize serial communication at 9600 bits per second:
 						// Fan Pin Setup
-	pinMode(fanOut, OUTPUT);
+	pinMode(fanOut1, OUTPUT);
+	pinMode(fanOut2, OUTPUT);
+	pinMode(eChoke, OUTPUT);
 	// Tach Setup
 	pinMode(tachSensorPin, INPUT);
 	attachInterrupt(sensorInterrupt, sensorIsr, RISING);
@@ -400,12 +405,27 @@ void fanControl(float a)
 
 	if (a > 190)
 	{
-		digitalWrite(fanOut, HIGH); // statment to turn on fan Digital output.
-									// set pin high
+		digitalWrite(fanOut1, HIGH); // statment to turn on fan Digital output.
+		digitalWrite(fanOut2, HIGH);							// set pin high
 	}
 	else if (a < 180)
 	{
 		//Statement to turn fan digital output off.
-		digitalWrite(fanOut, LOW);
+		digitalWrite(fanOut1, LOW);
+		digitalWrite(fanOut2, LOW);
 	}
+}
+void eChoke()
+{
+	// set pin 22 high if temp is under 120F
+	int engineTempF = getCoolantTemp();
+	if (engineTempF < 120)
+	{
+		digitalWrite(eChoke, HIGH);
+	}
+	else
+	{
+		digitalWrite(eChoke, LOW);
+	}
+	
 }
