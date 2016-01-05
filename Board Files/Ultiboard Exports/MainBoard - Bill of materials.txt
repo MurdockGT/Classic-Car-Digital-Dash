@@ -1,0 +1,25 @@
+Ultiboard Information Export File
+
+Design Name  : MainBoard - Bill of materials
+Report Date  : 5 January 2016
+Report Time  : 06:34
+--------------------------------------------------------------------------------
+
+VALUE        SHAPE        #    REFDES       
+
+1N4149       DO-35        3    D1,D2,D3     
+4.7kOhm      RES1300-700X250 1    R4           
+10kOhm       RES1300-700X250 4    R10,R12,R13,R17
+22Ohm        RES1300-700X250 14   R1,R2,R3,R5,R7,R9,R11,R15,R16,R18,R19,R20,R21,R22
+100kOhm      RES1300-700X250 1    R14          
+100pF        CAPR508-381X254X584 6    C1,C2,C3,C4,C5,C6
+100Ohm       RES1300-700X250 1    R8           
+300Ohm       RES1300-700X250 1    R6           
+HDR1X2       HDR1X2       1    12VIN        
+HDR1X3       HDR1X3       1    SERIAL       
+HDR1X8       Arduino_HDR1X8 5    ADCH,ADCL,COMMUNICATION,POWER,PWML
+HDR1X10      Arduino_HDR1X10 1    JP6          
+HDR2X3       HDR2X3       2    RELAY,SDCARD 
+HDR2X18      Arduino_HDR2X18 1    XIO          
+RIBBON_16V   FKV16SN      1    Sensors      
+TIP122G      TO254P482X997X1925-3P 3    Q1,Q2,Q3     
