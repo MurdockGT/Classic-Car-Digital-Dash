@@ -94,13 +94,13 @@ void loop() {
 	int currentRPM = getRPM();
 
 	// Transfer information to display arduino/4ds device
-	Wire.beginTransmission(9); // transmit to device #9
-	Wire.write(oilp);// sends oil pressure
-	Wire.write(engineTemp);
-	Wire.write(currentRPM);
+	//Wire.beginTransmission(9); // transmit to device #9
+//	Wire.write(oilp);// sends oil pressure
+	//Wire.write(engineTemp);
+	//Wire.write(currentRPM);
 	//Wire.write(batteryVoltage);
 	//Wire.write(iatTemp);
-	Wire.endTransmission();    // stop transmitting
+	//Wire.endTransmission();    // stop transmitting
 
 
 }
