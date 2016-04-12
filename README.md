@@ -18,20 +18,19 @@ Oil Pressure
 	Sensor is linear.  Calculations will be made with 240 to 33 ohm range.  Low PSI warning will also
 	be wired into arduino to trigger a low oil alarm.
 
-Future Additions - Code written, untested
-
-Fuel Level indicator
-	Will be similar to oil pressure coding.  It is a linear potentiometer that it will be reading.
-
 Battery Level
 	Will use a voltage divider and calibration. R1 will be 1m ohm and R2 will be 100k ohms. We will sence from the center
 	of R1 and R2.  R2 will be grounded. R1 will go to positive on the battery.
+Fan Control - Tempurature dependent with master switch on touchscreen for overide.
+
+Future Additions - Code written, untested
+
+Added code for 4Dsystem 7 inch touchscreen gauge cluster.
+
+Fuel Level indicator  - Code is there for a 80 ohm sending unit, need to calibrate.  This can be adjust in circuit and code for other brand sending units.
 	
-Wideband Sensor - LSU 4.9 Wideband sensor and controller
+Wideband Sensor - LSU 4.9 Wideband sensor and controller  14point7.com controller.
 
 Intake manifold pressure   -  http://www.14point7.com/products/boost-vac-sensor
 
-MAFR calculations - Function is there, worked from another project. Untested on this setup.
-
-Future additions - Code not written yet, Placeholder function only 
-Fuel Pressure - http://www.14point7.com/products/fuel-pressure-sensor
+Fuel Pressure - Function is there, same sensor as the Oil pressure gauge.
