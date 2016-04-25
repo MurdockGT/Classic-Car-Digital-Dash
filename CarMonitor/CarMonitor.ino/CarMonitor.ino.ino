@@ -28,7 +28,7 @@ const float aRef = 5.0; // analog reference for board (Volts)
 const float regVoltage = 5.0; // instrument unit voltage regulator output (Volts)
 
 //digital Pins
-const byte tachPin = 19; // tach signal on digital pin 3 (interrupt 1)
+
 const byte oilWarninglight = 18; // pin for showing if oil pressure has dropped below 11 psi
 const byte wireSDAPin = 20; // I2C SDA
 const byte wireSCLPin = 21; // I2C SCL
